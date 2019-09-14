@@ -1,0 +1,23 @@
+Ovaj txt opisuje sliku kako_se_crta_kvadar koju sam nasao na netu..
+
+Obični kvadar bi se nacrtao koristeći 4 crvene točke sa slike. Te 4 crvene tocke su
+u funkciji crtajKvadar() spremljene u controlPoints.
+
+Za crtanje kvadra sa zaobljenim rubovima se koriste tri "faze" crtanja:
+
+1) U prvoj fazi se crta zeleni pravokutnik sa slike. Njegove tocke su spremljene u
+strana_1 varijablu.
+
+2) U drugoj se na zeleni pravokutnik nacrta ovaj plavi s njegove 4 bijele tocke koje
+su spremljene u strana_2.
+
+3) U trecoj fazi se ispunjava ovaj preostali, smeđi, prostor na slici. Taj prostor
+se ispunjava s nekoliko trokuta (kao na slici), a tocke koje cine te trokute se racu-
+naju koristeci onu Bezierovu formulu s yt videa iz readme koja se u kodu nalazi u
+funkciji racunajBez().
+
+	U tu racunajBez() funkciju se salju dvije bijele tocke i jedna crvena koja
+čini rub. Onda se vrsi matematika i dobiju se dvije tocke, koje se spreme u temp[0]
+ i temp[1]. Dvije temp tocke zajedno s žutom točkom na slici se koriste za crtanje
+zeljenih trokuta.
+
