@@ -89,13 +89,14 @@ GLboolean CompressSpring(Opruga& opruga, float pritisak)	// Funkcija prima oprug
 return maksimalnoKompresirana;
 }
 
-void crtajKvadar( Kvadar& kvadar ){		// Ovo je najruzniji dio programa. Crta se kvadar koristeci Bezierove krivulje.
+void crtajKvadar( Kvadar& kvadar ){		
 
-	Tocka strana_1[4] = Tocka(0.0f);
-	Tocka strana_2[4] = Tocka(0.0f);
-	Tocka controlPoints[4] = Tocka(0.0f);
-	Tocka fooPoints[4] = Tocka(0.0f);
-	Tocka temp[2] = Tocka(0.0f);
+	// Ovo je najruzniji dio programa. Crta se kvadar koristeci Bezierove krivulje.
+	Tocka strana_1[4] = { Tocka(0.0f), Tocka(0.0f), Tocka(0.0f), Tocka(0.0f) };
+	Tocka strana_2[4] = { Tocka(0.0f), Tocka(0.0f), Tocka(0.0f), Tocka(0.0f) };
+	Tocka controlPoints[4] = { Tocka(0.0f), Tocka(0.0f), Tocka(0.0f), Tocka(0.0f) };
+	Tocka fooPoints[4] = { Tocka(0.0f), Tocka(0.0f), Tocka(0.0f), Tocka(0.0f) };
+	Tocka temp[2] = { Tocka(0.0f), Tocka(0.0f) };
 	float offset = 0.5f;
 
 //1
