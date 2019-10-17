@@ -2,6 +2,9 @@
 Jednostavna scena simulira udarac dvaju kvadra, od kojih jedan ima oprugu radi apsorpcije postotka jačine udarca.
 Kvadri se crtaju koristeći Bezierove krivulje, kako bi se postigao izgled kvadra sa zaobljenim rubovima.
 
+## Kompajlirano pomocu:
+g++ -std=c++17 main.cpp mw/*cpp -lglfw -lassimp -lGLU -lGL -lGLEW -lglut
+
 ## Kontrole:
 - R - ponovo pokreće simulaciju
 - P - pauzira simulaciju
