@@ -1,4 +1,3 @@
-// Obriši ovaj komentar
 #include <GL/gl.h>
 #include <GL/glut.h>
 #include <math.h>	// iz ovoga koristim pow() i sqrt() funkcije
